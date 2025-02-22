@@ -147,14 +147,14 @@ const Newhomepage = () => {
         </nav>
       </header>
 
-      <main className="pt-20 max-w-7xl mx-auto mt-8 px-4 sm:px-6 lg:px-8">
+      <main className="pt-20 max-w-7xl mx-auto mt-8 mb-8 px-4 sm:px-6 lg:px-8">
         <section
-          className="relative bg-cover bg-center h-[500px] text-white flex items-center justify-center mb-12"
+          className="relative bg-cover bg-center h-[500px] text-white flex items-center justify-center mb-10"
           style={{ backgroundImage: 'url(/teniskoberec.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
           <div className="absolute inset-0 bg-black opacity-10"></div>
           <div className="relative z-10 text-center">
-            <h1 className="text-5xl font-bold mb-4 text-orange-400">
+            <h1 className="text-5xl font-extrabold mb-4 text-orange-400">
               Tenisová škola Čimice
             </h1>
             <p className="text-xl mb-6 text-gray-300">
@@ -178,7 +178,7 @@ const Newhomepage = () => {
           </div>
         </section>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-10">
           <section
             id="cenik"
             className="bg-white rounded-lg shadow-md p-6 border-t-4 border-orange-500 hover:shadow-lg transition duration-300 transform hover:scale-105"
@@ -245,64 +245,105 @@ const Newhomepage = () => {
           </section>
         </div>
 
-        <section className="bg-white rounded-lg shadow-md p-10 border-t-4 border-green-500 hover:shadow-lg transition duration-300">
-  <h2 className="text-3xl font-semibold mb-8 text-green-600 text-center">
-    Tenisové kurty
-  </h2>
-  <p className="text-gray-700 text-center mb-8">
-  Náš tenisový areál nabízí různé povrchy a zázemí pro rozmanitou a nerušenou hru. 
-  K dispozici jsou 4 samostatné haly, které umožňují pohodlné hraní i v zimní sezóně. 
-  Mezi povrchy naleznete 2 kurty s nově instalovanou umělou trávou (2023), 1 kurt s umělým povrchem 
-  a 2 antukové kurty.
-  </p>
-
-  <div className="grid md:grid-cols-2 gap-8">
-    {/* Letní sezóna */}
-    <div className="flex flex-col items-center text-center">
-      <h3 className="text-2xl font-semibold text-green-600 mb-4">Letní sezóna</h3>
-      <p className="text-gray-700 mb-4">
-        8. dubna – 4. října 2024
+        <section className="bg-white rounded-xl shadow-lg p-12 border-t-4 border-green-700 hover:shadow-xl transition-all duration-300">
+  <div className="grid lg:grid-cols-3 gap-8 items-start">
+    {/* Levá strana - Text */}
+    <div className="lg:col-span-1 text-left flex flex-col justify-center max-w-md mx-auto lg:mx-0">
+      <h2 className="text-3xl font-extrabold tracking-wide text-green-700 mb-6">
+        Tenisový areál
+      </h2>
+      <p className="text-gray-800 text-lg mb-4 leading-relaxed">
+        Náš tenisový areál nabízí různé povrchy a zázemí pro rozmanitou a nerušenou hru. K dispozici jsou 4 samostatné haly, které umožňují pohodlné hraní i v zimní sezóně.
       </p>
-      <p className="text-gray-700 mb-8">
-        2 antukové kurty a 2 kurty s umělou trávou pro letní sezónu.
+      <p className="text-gray-800 text-lg leading-relaxed">
+        Mezi povrchy naleznete <span className="font-semibold text-green-700">2 kurty s nově instalovanou umělou trávou (2023)</span>, 1 kurt s umělým povrchem a 2 antukové kurty.
       </p>
-      <ImageCarousel images={summerImages} />
     </div>
-
-    {/* Zimní sezóna */}
-    <div className="flex flex-col items-center text-center">
-      <h3 className="text-2xl font-semibold text-green-600 mb-4">Zimní sezóna</h3>
-      <p className="text-gray-700 mb-4">
-        9. října 2023 – 5. dubna 2024
-      </p>
-      <p className="text-gray-700 mb-8">
-      2 kurty umělá tráva, 1 kurt s umělým povrchem a 1 antukový kurt.
-      </p>
-      <ImageCarousel images={winterImages} />
+    
+    {/* Střední sloupec - Letní sezóna */}
+    <div className="lg:col-span-1 flex flex-col items-center text-center pl-6 p-6 rounded-lg bg-white-50 hover:shadow-lg transition duration-300 transform ">
+      <h3 className="text-3xl font-bold text-green-700 tracking-wide mb-2">Letní sezóna</h3>
+      <p className="text-green-700 text-lg font-bold mb-2"> (duben – září)</p>
+      <ul className="text-gray-800 mb-4 leading-relaxed text-lg">
+        <li><span className="font-semibold">3 kurty s umělou trávou</span></li>
+        <li><span className="font-semibold">2 antukové kurty</span></li>
+        <br></br>
+      </ul>
+      <p className="text-gray-700 text-base italic mb-4">Ideální podmínky pro venkovní hru po celé léto.</p>
+      <ImageCarousel images={summerImages} className="w-full max-w-md rounded-lg shadow-md" />
+    </div>
+    
+    {/* Pravý sloupec - Zimní sezóna */}
+    <div className="lg:col-span-1 flex flex-col items-center text-center pl-6 p-6 bg-white-50 rounded-lg hover:shadow-lg transition duration-300 transform ">
+      <h3 className="text-3xl font-bold text-green-700 tracking-wide mb-2">Zimní sezóna</h3>
+      <p className="text-green-700 text-lg font-bold mb-2"> (říjen – březen)</p>
+      <ul className="text-gray-800 mb-4 leading-relaxed text-lg">
+        <li><span className="font-semibold">2 kurty s umělou trávou</span></li>
+        <li><span className="font-semibold">1 kurt s pevným povrchem</span></li>
+        <li><span className="font-semibold">1 antukový kurt</span></li>
+      </ul>
+      <p className="text-gray-700 text-base italic mb-4">Haly zajišťují komfortní hraní i během zimy.</p>
+      <ImageCarousel images={winterImages} className="w-full max-w-md rounded-lg shadow-md" />
     </div>
   </div>
-
-
 </section>
 
+<section className="bg-white rounded-xl shadow-lg p-12 border-t-4 border-blue-600 hover:shadow-xl transition-all duration-300 mt-10">
+  <div className="grid lg:grid-cols-3 gap-8 items-start">
+    {/* Levá strana - Text */}
+    <div className="lg:col-span-1 text-left flex flex-col justify-center max-w-md mx-auto lg:mx-0">
+      <h2 className="text-3xl font-extrabold tracking-wide text-blue-700 mb-6">
+        Trenérský tým
+      </h2>
+      <p className="text-gray-800 text-lg mb-4 leading-relaxed">
+        Náš tým trenérů je parta nadšených lidí, kteří tenis opravdu milují. Každý z nás má své zkušenosti a rádi je předáme dál – ať už jsi začátečník, nebo pokročilý.
+      </p>
+      <p className="text-gray-800 text-lg leading-relaxed">
+        Tréninky vedeme s přátelským přístupem, ale zároveň se snažíme, aby si každý z lekce odnesl něco nového a zlepšil svou hru.
+      </p>
+    </div>
+    
+    {/* Pravá strana - Obrázek */}
+    <div className="lg:col-span-2 flex justify-center h-full">
+      <img
+        src="/tenisovyteam.jpg"
+        alt="Trenérský tým"
+        className="rounded-lg w-full max-w-lg shadow-md object-cover"
+      />
+    </div>
+  </div>
+</section>
 
-        <section className="bg-white rounded-lg shadow-md p-10 border-t-4 border-blue-500 hover:shadow-lg transition duration-300 mt-12">
-          <h2 className="text-3xl font-semibold mb-8 text-blue-600 text-center">
-            Trenérský team
-          </h2>
-          <p className="text-gray-700 text-center mb-8">
-            Náš tým trenérů je parta nadšených lidí, kteří tenis opravdu milují. Každý z nás má své zkušenosti a rádi je předáme dál – ať už jsi začátečník, nebo pokročilý. 
-            Tréninky vedeme s přátelským přístupem, ale zároveň se snažíme, aby sis z každé lekce odnesl/a něco nového a zlepšil/a svou hru. 
-            Přijď za námi na kurt a užij si tenis naplno!
-          </p>
-          <div className="text-center">
-            <img
-              src="/tenisovyteam.jpg"
-              alt="Trenérský team"
-              className="rounded-lg w-full h-auto"
-            />
+          {/* Contact Form */}
+          <section className="bg-white rounded-xl shadow-lg p-12 border-t-4 border-orange-600 hover:shadow-xl transition-all duration-300 mt-10">
+          <div className="bg-white gap-8 rounded-lg">
+            <h2 className="text-3xl font-extrabold text-orange-600 mb-6">Napište nám</h2>
+            <form 
+              action="https://formspree.io/f/xzzpqgqy" 
+              method="POST" 
+              className="space-y-6">
+              <div>
+                <label className="block text-gray-700 font-medium">Jméno a příjmení *</label>
+                <input type="text" name="name" className="mt-1 p-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-orange-500 focus:border-orange-500" required />
+              </div>
+              <div>
+                <label className="block text-gray-700 font-medium">e-mail *</label>
+                <input type="email" name="email" className="mt-1 p-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-orange-500 focus:border-orange-500" required />
+              </div>
+              <div>
+                <label className="block text-gray-700 font-medium">Telefon</label>
+                <input type="tel" name="phone" className="mt-1 p-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-orange-500 focus:border-orange-500" />
+              </div>
+              <div>
+                <label className="block text-gray-700 font-medium">Zde zanechte vaši zprávu *</label>
+                <textarea name="message" className="mt-1 p-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-orange-500 focus:border-orange-500" rows="5" required></textarea>
+              </div>
+              <div className="text-center">
+                <button type="submit" className="bg-orange-600 text-white py-3 px-8 rounded-full shadow-md hover:bg-orange-700 transition">Odeslat</button>
+              </div>
+            </form>
           </div>
-        </section>
+          </section>
 
       </main>
 

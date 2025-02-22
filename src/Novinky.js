@@ -18,6 +18,200 @@ const Novinky = () => {
 
   // Definice novinek
 const newsItems = [
+  {
+    title: 'V termínu jarních prázdnin Prahy 8',
+    date: '17.2.2025',
+    content: (
+      <>
+        <p>17.2. - 21.2. 25 SE SKUPINOVÉ TRÉNINKY NEKONAJÍ.</p>
+        <p>KRÁSNÉ PRÁZDNINY.</p>
+        <br />
+        <p>Tréninky probíhají po dohodě, dle zájmu.</p>
+      </>
+    ),
+  },
+  {
+    title: 'Úspěchy na turnaji ČTS dorostenců',
+    date: '15.2.2025',
+    content: (
+      <>
+        <p>ANIČKA KOBZOVÁ v semifinále dvouhry turnaje ČTS dorostenek.</p>
+        <p>FANDA KOBZA v semifinále čtyřhry dorostenců turnaje dorostenců.</p>
+        <br />
+        <p>GRATULACE</p>
+        <p>Viz. foto Fcb a inst.</p>
+      </>
+    ),
+  },
+  {
+    title: 'POZVÁNKA na tenisové turnaje ČTS v rámci zimní sezony',
+    date: '27.1.2025',
+    content: (
+      <>
+        <p>POZVÁNKA na tenisové turnaje ČTS v rámci zimní sezony na domácích kurtech</p>
+        <br />
+        <ul className="list-disc list-inside">
+          <li>15. - 16. 2. DOROST</li>
+          <li>1. - 2. 3. MLADŠÍ ŽACTVO</li>
+          <li>8. - 9. 3. STARŠÍ ŽACTVO</li>
+        </ul>
+        <br />
+        <p>KLUBOVÉ TURNAJE</p>
+        <br />
+        <ul className="list-disc list-inside">
+          <li>VELIKONOČNÍ TURNAJ pro děti 29.3.</li>
+          <li>VELIKONOČNÍ TURNAJ DOSPĚLÝCH ve čtyřhrách a mixech 5.4.</li>
+        </ul>
+        <br />
+        <p>TĚŠÍME SE NA VAŠI ÚČAST 😊</p>
+      </>
+    ),
+  },
+  {
+    title: 'Vánoční přání a informace o trénincích',
+    date: '24.12.2024',
+    content: (
+      <>
+        <p>PŘEJEME VŠEM NAŠIM SVĚŘENCŮM A PŘÍZNIVCŮM</p>
+        <p>KRÁSNÉ VÁNOCE a VŠECHNO NEJLEPŠÍ V NOVÉM ROCE. ❤️</p>
+        <p>SPOUSTU NEJEN TENISOVÝCH ÚSPĚCHŮ v nové sezoně 😊</p>
+        <br />
+        <p>Tréninky během vánočních prázdnin 23.12. - 3.1. je nutné domlouvat individuálně.</p>
+        <p>Skupinové lekce dle běžného rozvrhu se v tomto období nekonají.</p>
+      </>
+    ),
+  },
+  {
+    title: 'SAŠA HOFMANN - nový držitel putovního poháru',
+    date: '20.12.2024',
+    content: (
+      <>
+        <p>SAŠA HOFMANN</p>
+        <p>novým držitelem putovního poháru pro aktuálně nejlepšího čimického hráče.</p>
+        <p>Úžasný herní posun a nepřehlédnutelný zodpovědný přístup k tréninku.</p>
+        <p>Saša byl pro celý trenérský tým jasnou volbou.</p>
+        <p>GRATULACE 👏</p>
+      </>
+    ),
+  },
+  {
+    title: 'VÝSLEDKY VÁNOČNÍHO TURNAJE DĚTÍ',
+    date: '14.12.2024',
+    content: (
+      <>
+        <p>VÝSLEDKY VÁNOČNÍHO TURNAJE DĚTÍ</p>
+        <p>Děti hrály ve skupinách dle věku a herní úrovně, každý s každým a na závěr i čtyřhru.</p>
+        <p>Vítězka mezi dívkami SOŇA ZAJÍČKOVÁ</p>
+        <p>Vítěz chlapců ONDRA ŘEHOŘ a KUBA KAISER.</p>
+        <p>Vítěz ve skupince starších BASŤA BALOUN a NATÁLKA MACKOVÁ</p>
+        <br />
+        <p>Gratulace vítězům, všichni zaslouží pochvalu, moc prima sledovat zápasy se zápalem pro hru a vyrovnanými výměnami. ❤️</p>
+      </>
+    ),
+  },
+  {
+    title: 'Výsledky vánočního turnaje čtyřher dospělých',
+    date: '7.12.2024',
+    content: (
+      <>
+        <p>Výsledky vánočního turnaje čtyřher dospělých</p>
+        <p>Vítězi pánské čtyřhry MARCEL NOVOTNÝ a PETR HARAMULE</p>
+        <p>Vítězi mixů LENKA VYDROVÁ a PETR PSUTKA</p>
+        <p>Gratulace vítězům a poděkování všem účastníkům, moc vydařená akce 👏</p>
+        <p>FOTO viz instagram a facebook.</p>
+      </>
+    ),
+  },
+  {
+    title: 'POZVÁNKA na VÁNOČNÍ KLUBOVÉ TURNAJE',
+    date: '30.11.2024',
+    content: (
+      <>
+        <p>POZVÁNKA na VÁNOČNÍ KLUBOVÉ TURNAJE</p>
+        <ul className="list-disc list-inside">
+          <li>30.11. pro nejmenší v kategorii minitenis a střední kurt</li>
+          <li>7.12. čtyřhry a mixy dospělých</li>
+          <li>14.12. babytenis, mladší a starší žactvo</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: 'TRÉNINKY zaměřené na zápasovou přípravu',
+    date: '7.12.2024',
+    content: (
+      <>
+        <p>TRÉNINKY zaměřené na zápasovou přípravu dvouher a čtyřher se budou konat v průběhu celé zimní sezony KAŽDOU SOBOTU od 9 do 12h.</p>
+        <p>S vyjímkou konání turnaje.</p>
+      </>
+    ),
+  },
+  {
+    title: 'Podzimní prázdniny',
+    date: '28.10.2024',
+    content: (
+      <>
+        <p>V průběhu podzimních prázdnin 28.- 30.10. se skupinové tréninky dle běžného rozvrhu nekonají.</p>
+        <p>Zájemci o trénink je nutné domluvit individuálně.</p>
+        <p>KRÁSNÉ PRÁZDNINY</p>
+      </>
+    ),
+  },
+  {
+    title: 'ZAHÁJENÍ ZIMNÍ SEZONY',
+    date: '14.10.2024',
+    content: (
+      <>
+        <p>ZAHÁJENÍ ZIMNÍ SEZONY, tréninky budou od pondělka probíhat již v halách.</p>
+      </>
+    ),
+  },
+  {
+    title: 'TURNAJ ČTYŘHER na zakončení letní sezony',
+    date: '6.10.2024',
+    content: (
+      <>
+        <p>TURNAJ ČTYŘHER na zakončení letní sezony</p>
+        <p>Letošní vítězi putovního poháru</p>
+        <p>Skupina 1 rodiče + děti DAVID a PETR HARAMULOVI</p>
+        <p>Skupina 2 sourozenci ANIČKA a FANDA KOBZOVI</p>
+        <p>Skupina 3 babytenis JENDA a PETR HARAMULOVI</p>
+        <br />
+        <p>Gratulace úplně všem, moc pěkná vyrovnaná utkání ve všech skupinách a milá přátelská atmosféra náležící k této naší každoroční akci včetně krásného počasí. 👏</p>
+        <p>DĚKUJI všem za účast!</p>
+      </>
+    ),
+  },
+  {
+    title: 'TURNAJ DVOUHER DĚTÍ',
+    date: '29.9.2024',
+    content: (
+      <>
+        <p>TURNAJ DVOUHER DĚTÍ</p>
+        <br />
+        <p>Vítěz 1.skupiny mladší žáci ADAM MAREK</p>
+        <p>Vítěz 2. skupiny mladší žáci MATYÁŠ KÁBR</p>
+        <p>Vítěz 3. skupiny babytenis Jenda Haramula</p>
+        <p>Všichni hráči si ještě navíc zahráli čtyřhry a VŠEM dnešním účastníkům gratulace a pochvala.</p>
+      </>
+    ),
+  },
+  {
+    title: 'TRÉNINKY ZAČÍNAJÍ OPĚT od 2.9.',
+    date: '2.9.2024',
+    content: (
+      <>
+        <p>TRÉNINKY ZAČÍNAJÍ OPĚT od 2.9.</p>
+        <p>V novém rozvrhu.</p>
+        <p>Trénink ŠKOLIČKA MINITENIS</p>
+        <ul className="list-disc list-inside">
+          <li>pondělí 17-18h</li>
+          <li>středa 17-18h</li>
+          <li>pátek 16-17h</li>
+        </ul>
+      </>
+    ),
+  },
     {
       title: 'Přejeme všem krásné prázdniny.',
       date: '1.7.2024',
@@ -631,3 +825,4 @@ const newsItems = [
 };
 
 export default Novinky;
+
